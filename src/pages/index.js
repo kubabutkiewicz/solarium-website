@@ -1,5 +1,6 @@
 import React from "react";
 import "../layout/layout.css";
+import Layout from "../layout/Layout";
 import Header from "../layout/Header/Header";
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
@@ -15,10 +16,10 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 const IndexPage = () => (
-  <>
+  <Layout>
     <GlobalStyle />
     <Header />
-  </>
+  </Layout>
 );
 
 export default IndexPage;
