@@ -2,6 +2,7 @@ import React from "react";
 import "../layout/layout.css";
 import Layout from "../layout/Layout";
 import Header from "../layout/Header/Header";
+import About from "../layout/About/About";
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   body { 
@@ -19,6 +20,9 @@ const IndexPage = () => (
   <Layout>
     <GlobalStyle />
     <Header />
+    <main>
+      <About />
+    </main>
   </Layout>
 );
 
