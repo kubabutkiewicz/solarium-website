@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import "../layout/layout.css";
 import Layout from "../layout/Layout";
 import Header from "../layout/Header/Header";
 import About from "../layout/About/About";
+import Pricing from "../layout/Pricing/Pricing";
 import { createGlobalStyle } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
   body { 
     margin: 0;
@@ -16,14 +18,39 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `;
-const IndexPage = () => (
-  <Layout>
-    <GlobalStyle />
-    <Header />
-    <main>
-      <About />
-    </main>
-  </Layout>
-);
+
+class IndexPage extends Component {
+  state = {
+    scrollY: 0
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    this.setState({
+      scrollY: window.scrollY
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    this.setState({
+      scrollY: window.scrollY
+    });
+  };
+  render() {
+    return (
+      <Layout>
+        <GlobalStyle />
+        <Header scrollY={this.state.scrollY} />
+        <main>
+          <About />
+          <Pricing />
+        </main>
+      </Layout>
+    );
+  }
+}
 
 export default IndexPage;

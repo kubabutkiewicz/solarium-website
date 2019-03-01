@@ -16,10 +16,8 @@ class Header extends Component {
   render() {
     return (
       <HeaderStyled>
-        <Wrapper>
-          <Navigation />
-          <HeaderContent />
-        </Wrapper>
+        <Navigation scrollY={this.props.scrollY} />
+        <HeaderContent />
       </HeaderStyled>
     );
   }
