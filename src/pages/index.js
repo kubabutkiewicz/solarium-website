@@ -4,6 +4,7 @@ import Layout from "../layout/Layout";
 import Header from "../layout/Header/Header";
 import About from "../layout/About/About";
 import Pricing from "../layout/Pricing/Pricing";
+import Contact from "../layout/Contact/Contact";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -47,6 +48,7 @@ class IndexPage extends Component {
         <main>
           <About />
           <Pricing />
+          <Contact />
         </main>
       </Layout>
     );

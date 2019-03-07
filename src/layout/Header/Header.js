@@ -8,10 +8,7 @@ const HeaderStyled = styled.header`
   background: center / cover no-repeat url(${background});
   background-attachment: fixed;
 `;
-const Wrapper = styled.div`
-  max-width: 1300px;
-  margin: 0 auto;
-`;
+
 class Header extends Component {
   render() {
     return (
