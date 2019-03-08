@@ -14,25 +14,10 @@ const Wrapper = styled.div`
 `;
 class Pricing extends Component {
   state = {
-    solariumsInfo: [
-      {
-        name: "Kreta",
-        price: 1,
-        power: "strong"
-      },
-      {
-        name: "Teneryfa",
-        price: 1.5,
-        power: "mid"
-      },
-      {
-        name: "Majorka",
-        price: 0.9,
-        power: "week"
-      }
-    ]
+    solariumsInfo: [...this.props.desc.edges]
   };
   render() {
+    console.log(this.state.solariumsInfo);
     return (
       <PricingStyled id="pricing">
         <Wrapper>

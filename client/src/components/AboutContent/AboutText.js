@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../SectionTitle";
+
 const AboutTextStyled = styled.p`
   font-size: 1.2rem;
   @media screen and (min-width: 768px) {
@@ -20,16 +21,11 @@ const Wrapper = styled.div`
     width: 80vw;
   }
 `;
-const AboutText = () => {
+const AboutText = ({ aboutText }) => {
   return (
     <Wrapper>
       <SectionTitle title="O nas" />
-      <AboutTextStyled>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        eos minima magnam recusandae earum, ad labore sequi ratione totam itaque
-        laborum corrupti, voluptates assumenda fuga eligendi excepturi aperiam.
-        Voluptates, ipsam.
-      </AboutTextStyled>
+      <AboutTextStyled>{aboutText.Text}</AboutTextStyled>
     </Wrapper>
   );
 };

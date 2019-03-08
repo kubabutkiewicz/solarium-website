@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/solariums",
+      "handler": "Solarium.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solariums/count",
+      "handler": "Solarium.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solariums/:id",
+      "handler": "Solarium.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/solariums",
+      "handler": "Solarium.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/solariums/:id",
+      "handler": "Solarium.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/solariums/:id",
+      "handler": "Solarium.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -28,7 +28,7 @@ class About extends Component {
   render() {
     return (
       <Wrapper>
-        <AboutContent />
+        <AboutContent aboutText={this.props.aboutText} />
         <ImgWrapper />
       </Wrapper>
     );

@@ -10,10 +10,10 @@ const Wrapper = styled.div`
     margin-left: 5rem;
   }
 `;
-const AboutContent = () => {
+const AboutContent = ({ aboutText }) => {
   return (
     <Wrapper>
-      <AboutText />
+      <AboutText aboutText={aboutText} />
     </Wrapper>
   );
 };

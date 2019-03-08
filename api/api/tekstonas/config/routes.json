@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tekstonas",
+      "handler": "Tekstonas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tekstonas/count",
+      "handler": "Tekstonas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tekstonas/:id",
+      "handler": "Tekstonas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tekstonas",
+      "handler": "Tekstonas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tekstonas/:id",
+      "handler": "Tekstonas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tekstonas/:id",
+      "handler": "Tekstonas.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

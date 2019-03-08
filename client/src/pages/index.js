@@ -6,7 +6,7 @@ import About from "../layout/About/About";
 import Pricing from "../layout/Pricing/Pricing";
 import Contact from "../layout/Contact/Contact";
 import { createGlobalStyle } from "styled-components";
-
+import { graphql } from "gatsby";
 const GlobalStyle = createGlobalStyle`
   body { 
     margin: 0;
@@ -41,13 +41,14 @@ class IndexPage extends Component {
     });
   };
   render() {
+    const { data } = this.props;
     return (
       <Layout>
         <GlobalStyle />
         <Header scrollY={this.state.scrollY} />
         <main>
-          <About />
-          <Pricing />
+          <About aboutText={data.strapiTekstonas} />
+          <Pricing desc={data.allStrapiOpis} />
           <Contact />
         </main>
       </Layout>
@@ -56,3 +57,22 @@ class IndexPage extends Component {
 }
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    strapiTekstonas {
+      id
+      Text
+    }
+    allStrapiSolarium {
+      edges {
+        node {
+          id
+          title
+          describtion
+          price
+        }
+      }
+    }
+  }
+`;
