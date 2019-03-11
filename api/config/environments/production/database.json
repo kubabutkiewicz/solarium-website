@@ -11,7 +11,10 @@
         "username": "${process.env.DATABASE_USERNAME || ''}",
         "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": "${process.env.DATABASE_NAME || 'production'}",
+        "ssl": false
+      }
     }
   }
 }
