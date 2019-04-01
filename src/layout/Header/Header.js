@@ -6,7 +6,6 @@ import HeaderContent from "../../components/HeaderContent/HeaderContent";
 const HeaderStyled = styled.header`
   height: 100vh;
   background: center / cover no-repeat url(${background});
-  background-attachment: fixed;
 `;
 
 class Header extends Component {

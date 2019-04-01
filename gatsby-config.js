@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
-        contentTypes: ["Solarium", "Tekstonas"],
+        apiURL: "https://glacial-ridge-16091.herokuapp.com",
+        contentTypes: ["Bio", "Solarium"],
         queryLimit: 1000
       }
     }

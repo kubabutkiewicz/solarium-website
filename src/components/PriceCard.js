@@ -15,18 +15,20 @@ const Tile = styled.h3`
   margin: 0;
 `;
 const Describtion = styled.p`
-  font-size: 1.4rem;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 1.6rem;
 `;
 const Price = styled.h4`
   font-size: 1.8rem;
   margin: 0;
 `;
-const PriceCard = ({ solarium }) => {
+const PriceCard = () => {
   return (
     <ListItem>
-      <Tile>{solarium.name}</Tile>
-      <Describtion>{solarium.power}</Describtion>
-      <Price>{solarium.price} zl/min</Price>
+      <Tile>Lorem</Tile>
+      <Describtion>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</Describtion>
+      <Price>1 zl/min</Price>
     </ListItem>
   );
 };

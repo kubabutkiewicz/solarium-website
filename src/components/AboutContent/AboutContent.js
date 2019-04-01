@@ -3,7 +3,7 @@ import AboutText from "./AboutText";
 import styled from "styled-components";
 const Wrapper = styled.div`
   max-width: 1300px;
-  margin: 12rem auto;
+  margin: 3rem auto;
   color: #0183c7;
   @media screen and (min-width: 1300px) {
     width: 50%;

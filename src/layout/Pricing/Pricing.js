@@ -4,6 +4,7 @@ import PriceList from "../../components/PriceList";
 import styled from "styled-components";
 const PricingStyled = styled.section`
   color: #0183c7;
+  padding-bottom: 5rem;
 `;
 const Wrapper = styled.div`
   max-width: 1300px;
@@ -13,16 +14,12 @@ const Wrapper = styled.div`
   }
 `;
 class Pricing extends Component {
-  state = {
-    solariumsInfo: [...this.props.desc.edges]
-  };
   render() {
-    console.log(this.state.solariumsInfo);
     return (
       <PricingStyled id="pricing">
         <Wrapper>
           <SectionTitle title="Cennik" center />
-          <PriceList solariumsInfo={this.state.solariumsInfo} />
+          <PriceList />
         </Wrapper>
       </PricingStyled>
     );

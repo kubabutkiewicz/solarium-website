@@ -14,6 +14,7 @@ const AboutTextStyled = styled.p`
 const Wrapper = styled.div`
   width: 80vw;
   margin: 0 auto;
+  text-align: center;
   @media screen and (min-width: 768px) {
     text-align: left;
   }
@@ -25,7 +26,7 @@ const AboutText = ({ aboutText }) => {
   return (
     <Wrapper>
       <SectionTitle title="O nas" />
-      <AboutTextStyled>{aboutText.Text}</AboutTextStyled>
+      <AboutTextStyled>{aboutText}</AboutTextStyled>
     </Wrapper>
   );
 };

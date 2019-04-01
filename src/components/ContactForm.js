@@ -2,19 +2,21 @@ import React from "react";
 import styled from "styled-components";
 const FormWrapper = styled.div`
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   @media screen and (min-width: 768px) {
-    width: 60%;
-    top: 50%;
+    position: absolute;
+    width: 40%;
+    top: 60%;
+    left: 25%;
   }
   @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
-  @media screen and (min-width: 1300px) {
+    position: absolute;
     width: 30%;
+    top: 60%;
+    left: 19%;
   }
 `;
 const FormStyled = styled.form`
@@ -25,7 +27,7 @@ const FormStyled = styled.form`
   align-items: center;
 `;
 const InputStyled = styled.input`
-  font-family: "FuturaMD";
+  font-family: "Roboto";
   border: 0;
   padding: 1rem;
   background-color: #ffffff;
@@ -36,7 +38,7 @@ const InputStyled = styled.input`
   box-shadow: 0px 4px 39px -6px rgba(1, 131, 199, 0);
   transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
   ::placeholder {
-    font-family: "FuturaMD";
+    font-family: "Roboto";
     color: #0183c7;
   }
   :focus {
@@ -55,7 +57,7 @@ const TextAreaStyled = styled.textarea`
   min-height: 10rem;
   padding: 1rem;
   border-radius: 1rem;
-  font-family: "FuturaMD";
+  font-family: "Roboto";
   border: 1px solid #0183c7;
   color: hsl(201, 20%, 10%);
   box-shadow: 0px 4px 39px -6px rgba(1, 131, 199, 0);

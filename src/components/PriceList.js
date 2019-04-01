@@ -17,12 +17,12 @@ const List = styled.ul`
     grid-template-columns: repeat(3, 1fr);
   }
 `;
-const PriceList = ({ solariumsInfo }) => {
+const PriceList = () => {
   return (
     <List>
-      {solariumsInfo.map(solarium => (
-        <PriceCard solarium={solarium} />
-      ))}
+      <PriceCard />
+      <PriceCard />
+      <PriceCard />
     </List>
   );
 };
